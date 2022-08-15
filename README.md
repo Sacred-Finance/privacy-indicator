@@ -28,7 +28,7 @@ In order to find the ideal time for the user, the algorithm:
 
 In simple terms, it creates bins for different times - e.g. 1-10 days, 11-20 days, 21-30 days.
 
-3. Classify the user into the correct bin depending on their mixing time. For example, 51 users are in the 1-2 day bin (far left of the image above). Note this is sample data.
+3. Classify each user into the correct bin depending on their mixing time. For example, 51 users are in the 1-2 day bin (far left of the image above). Note this is sample data.
 4. The algorithm then calculates a score based on the height of each bar.
 5. The bar with the vast majority of users is given a low score (this is where an attacker would first look)
 6. Bars with very few users are also given a low score
