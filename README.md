@@ -4,7 +4,7 @@ The indicator tries to select the best time for a depositor to withdraw their to
 
 ![user behavior](images/user-behavior.png)
 
-To quote the paper: _In Figure 17, we observe that most users of the linked deposit-withdraw pairs leave their deposit for less than a day in the mixer contract. This user behavior can be exploited for deanonymization by assuming that the vast majority of the deposits are always withdrawn after one or two days._
+To quote the paper: _In Figure 17, we observe that most users of the linked deposit-withdraw pairs leave their deposit for less than a day in the mixer contract. **This user behavior can be exploited for deanonymization by assuming that the vast majority of the deposits are always withdrawn after one or two days**._
 
 For example, if most users withdraw within 48 hours it makes it easier to link depositing addresses with withdrawal ones. A withdrawal happening today will likely be connected to one depositing 48 hours ago.
 
