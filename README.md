@@ -1,26 +1,26 @@
 # Privacy Level Indicator
 
-The indicator tries to select the best time for a depositor to withdraw their token for maximum privacy. Research by [Arxiv](https://arxiv.org/pdf/2005.14051.pdf) showed that a depositors behavior can be anonymized if they acted like the vast majority.
+The indicator finds the best time for a depositor to withdraw their token for maximum privacy. Research by [Arxiv](https://arxiv.org/pdf/2005.14051.pdf) showed that a depositor's behavior can be anonymized if they acted like the vast majority.
 
 ![user behavior](images/user-behavior.png)
 
 To quote the paper: _In Figure 17, we observe that most users of the linked deposit-withdraw pairs leave their deposit for less than a day in the mixer contract. **This user behavior can be exploited for deanonymization by assuming that the vast majority of the deposits are always withdrawn after one or two days**._
 
-For example, if most users withdraw within 48 hours it makes it easier to link depositing addresses with withdrawal ones. A withdrawal happening today will likely be connected to one depositing 48 hours ago.
+For example, if most users withdraw within 48 hours, it makes it easier to link depositing addresses with withdrawal ones. A withdrawal happening today will likely be connected to one depositing 48 hours ago.
 
 # Increasing Privacy
 
 Users can increase their privacy level by:
 
-1. Using mixing periods that are not used by the vast majority
+1. Using mixing periods that are not used by the vast majority of users.
    This makes it harder for an attacker to use time as a deanonymizing tool
-2. Using mixing periods that also have a large enough anonymity set
+2. Using mixing periods that also have a large enough anonymity set.
    This ensures the user is still covered by a large enough anonymity set
 
 In order to find the ideal time for the user, the algorithm:
 
-1. Collects times users have have spent recently in the mixer
-2. Creates [bins](https://observablehq.com/@d3/d3-bin) using the [Friedman-Diaconis' rule](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule)
+1. Collects times users have have spent recently in the mixer.
+2. Creates [bins](https://observablehq.com/@d3/d3-bin) using the [Friedman-Diaconis' rule](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule).
 
 ![sample data](images/sample-data.png)
 
