@@ -17,6 +17,8 @@ Users can increase their privacy level by:
 2. Using mixing periods that also have a large enough anonymity set.
    This ensures the user is still covered by a large enough anonymity set
 
+## Privacy Algorithm
+
 In order to find the ideal time for the user, the algorithm:
 
 1. Collects times users have have spent recently in the mixer.
