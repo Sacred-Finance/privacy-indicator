@@ -1,6 +1,6 @@
 # Privacy Level Indicator
 
-The indicator finds the best time for a depositor to withdraw their token for maximum privacy. Research by [Arxiv](https://arxiv.org/pdf/2005.14051.pdf) showed that a depositor's behavior can be anonymized if they acted like the vast majority.
+The indicator finds the best time for a depositor to withdraw their token for maximum privacy. Research by [Arxiv](https://arxiv.org/pdf/2005.14051.pdf) showed that a depositor's behavior can be de-anonymized if they acted like the vast majority.
 
 ![user behavior](images/user-behavior.png)
 
